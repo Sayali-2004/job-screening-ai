@@ -1,0 +1,7 @@
+langchain
+ollama
+pandas
+sqlite3
+PyPDF2
+tqdm
+openai
