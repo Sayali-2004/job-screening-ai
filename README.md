@@ -56,32 +56,24 @@ Recruiters face inefficiencies in manually screening hundreds of resumes per rol
 
 ## ⚙️ How to Run
 
-### ✅ Clone the Repo
-
 ```bash
-git clone https://github.com/yourusername/talentmate-ai.git
-cd talentmate-ai
+Step 1: Clone the Repository
+   git clone https://github.com/yourusername/talentmate-ai.git
+   cd talentmate-ai
 
----
+Step 2: Set Up Your Python Environment
+   python -m venv venv
+   source venv/bin/activate          # or venv\Scripts\activate on Windows
+   pip install -r requirements.txt
 
-### ✅ Set Up Your Environment
-```bash
-python -m venv venv
-source venv/bin/activate  # or venv\Scripts\activate on Windows
-pip install -r requirements.txt
+Step 3: Start the Local LLM (Ollama)
+   ollama run mistral                # Ensure the LLM model is running
 
----
+Step 4: Run the Full Project Pipeline
+python main.py                    # Run all agents end-to-end
 
-### ✅ Make Sure Ollama Is Running
-```bash
-ollama run mistral
-
----
-
-### ✅ Run the Full Project
-```bash
-python main.py
-streamlit streamlit_app.py
+Step 5: Launch the Web Dashboard
+streamlit run streamlit_app.py    # Launch the interactive dashboard (optional)
 
 
 
