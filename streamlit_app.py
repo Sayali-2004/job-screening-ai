@@ -75,3 +75,4 @@ with tabs[4]:
     for _, row in invites.iterrows():
         with st.expander(f"📨 {row['candidate_name']} - Job ID: {row['job_id']}"):
             st.markdown(row['email_text'])
+            
