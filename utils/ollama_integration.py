@@ -11,3 +11,4 @@ def call_ollama(prompt: str, model: str = DEFAULT_MODEL) -> str:
     except Exception as e:
         print("❌ Error calling Ollama:", e)
         return "Error: Could not generate response"
+        
