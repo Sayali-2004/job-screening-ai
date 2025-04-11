@@ -81,6 +81,7 @@ ollama run mistral
 ### ✅ Run the Full Project
 ```bash
 python main.py
+stramlit streamlit_app.py
 
 
 
