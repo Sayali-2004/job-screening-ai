@@ -55,6 +55,7 @@ def setup_database():
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS interview_invites (
         candidate_id INTEGER,
+        job_id INTEGER,
         email_text TEXT,
         status TEXT
     )
