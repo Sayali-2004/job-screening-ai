@@ -40,6 +40,16 @@ def setup_database():
         reasoning TEXT
     )
     """)
+    
+    # Shortlisted Table
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS shortlisted_candidates (
+        candidate_id INTEGER,
+        job_id INTEGER,
+        score REAL,
+        status TEXT
+    )
+    """)
 
     # Interview Invites Table
     cursor.execute("""
